@@ -1,0 +1,389 @@
+:root {
+  --text_dark: #391400;
+  --text_dark_gray: #391400;
+  --white: #ffffff;
+  --primary: #ef6d58;
+  --text_light_gray: #ffffff;
+  --border: #F3D1BF;
+  --bg: #16161a;
+  --bg-2: #242629;
+  --grey-1: #dbdde0;
+  --grey-2: #4d4d4d;
+  --orange-ligth: #f9e5da;
+  --rose: #FDEBEB;
+  --fontFamily: "Epilogue", sans-serif;
+  --h1: 800 4.5rem/5rem var(--fontFamily);
+  --h2: 300 3.5rem/4rem var(--fontFamily);
+  --h3: 800 2.5rem/3rem var(--fontFamily);
+  --h5: 300 1rem/2rem var(--fontFamily);
+  --label: 700 0.75rem/normal var(--fontFamily);
+  --text_big: 400 1.25rem/2rem var(--fontFamily);
+  --text: 400 1rem/2rem var(--fontFamily);
+  --text_small: 400 0.875rem/1.5rem var(--fontFamily);
+  --button: 900 0.875rem/normal var(--fontFamily);
+  --h4-bold: 700 1.5rem/2rem var(--fontFamily);
+  --h4-light: 300 1.5rem/2rem var(--fontFamily);
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  padding: 1rem;
+  background-color: var(--primary);
+  font: var(--button);
+  color: var(--white);
+  border-radius: 6px;
+  inline-size: 20.5rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buttonAlter {
+  padding: 1rem;
+  background-color: var(--primary);
+  font: var(--button);
+  color: var(--white);
+  border-radius: 6px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--orange-ligth);
+  color: var(--text_dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonAlter:hover {
+  background-color: var(--orange-ligth);
+  color: var(--text_dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.par {
+  margin: 0;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  font: var(--text);
+  color: var(--text_dark);
+}
+
+.parBig {
+  margin: 0;
+  font: var(--text_big);
+  color: var(--text_dark);
+  text-decoration: none;
+}
+
+.titles {
+  font: var(--h4-bold);
+  color: var(--text_dark);
+  margin: 0;
+  margin-block: 1.5rem;
+}
+
+.card-cake {
+  max-inline-size: 20.5rem;
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+}
+.card-cake-precies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h5 {
+  font: var(--h4-light);
+  letter-spacing: 3px;
+  color: var(--primary);
+}
+
+.h3 {
+  font: var(--h3);
+  color: var(--text_dark);
+  margin: 0;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+}
+
+.title-high {
+  font: var(--h4-light);
+  color: var(--text_dark);
+  margin: 0;
+  -webkit-margin-before: 4rem;
+          margin-block-start: 4rem;
+  -webkit-margin-after: 2.5rem;
+          margin-block-end: 2.5rem;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.main {
+  min-block-size: 100vh;
+  margin: auto;
+  max-inline-size: 75rem;
+  padding-inline: 1.25rem;
+}
+.main .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.main .hero img {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+}
+.main .heroImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .cakes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .cake-buscadosTitle {
+  text-align: center;
+}
+.main .cakesBus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .testimonies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .testimonies .card-testimonie {
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  max-inline-size: 20rem;
+}
+.main .testimonies .card-testimonie .person {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: baseline;
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+}
+.main .testimonies .card-testimonie .stars {
+  -webkit-margin-after: 5.5rem;
+          margin-block-end: 5.5rem;
+}
+.main .testimonies .card-testimonie:nth-child(3) {
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem;
+}
+.main .contact {
+  -webkit-margin-after: 2.5rem;
+          margin-block-end: 2.5rem;
+}
+.main .contact .medies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main .contact .medies .tel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .contact .medies .email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .formSec {
+  background-color: var(--rose);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem;
+  border-radius: 6px;
+  -webkit-margin-after: 6.25rem;
+          margin-block-end: 6.25rem;
+}
+.main .formSec h4 {
+  font: var(--h4-bold);
+  color: var(--text_dark);
+  margin: 0;
+}
+.main .formSec .label {
+  font-family: var(--fontFamily);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.75rem;
+  color: var(--text_dark);
+  text-transform: uppercase;
+}
+.main .formSec .input {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  line-height: 2rem;
+  border-radius: 6px;
+  border: none;
+}
+.main footer .footer-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  -webkit-padding-after: 1.5rem;
+          padding-block-end: 1.5rem;
+  -webkit-border-after: 1px solid black;
+          border-block-end: 1px solid black;
+}
+.main footer .footer-redes .socials {
+  display: flex;
+  gap: 0.5rem;
+}
+.main footer .derechos p {
+  font: var(--text);
+  text-align: center;
+  color: var(--text_dark);
+}
+@media screen and (min-width: 728px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4.5rem 30rem;
+    grid-template-areas: "header header" "hero heroImg" "cakesMainTitle cakesMainTitle" "cakesMain cakesMain" "cakesBuscadosTitle cakesBuscadosTitle" "cakesBuscados cakesBuscados" "testimoniesTitle testimoniesTitle" "testimonies testimonies" "contact formSec" "footer footer";
+  }
+  .main .header {
+    grid-area: header;
+  }
+  .main .hero {
+    grid-area: hero;
+  }
+  .main .heroImg {
+    grid-area: heroImg;
+  }
+  .main .heroImg img {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main .cakes-main-title {
+    grid-area: cakesMainTitle;
+  }
+  .main .cakes-main-title h4 {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+  .main .cakes-main {
+    grid-area: cakesMain;
+  }
+  .main .cakes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .cake-buscadosTitle {
+    grid-area: cakesBuscadosTitle;
+  }
+  .main .cake-buscadosTitle p {
+    text-align: center;
+  }
+  .main .cakesBuscados {
+    grid-area: cakesBuscados;
+  }
+  .main .cakesBus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .testimoniesTitle {
+    grid-area: testimoniesTitle;
+  }
+  .main .testimonies {
+    grid-area: testimonies;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main .testimonies .card-testimonie:nth-child(3) {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+  .main .contact {
+    -webkit-margin-before: 10rem;
+            margin-block-start: 10rem;
+    grid-area: contact;
+    -webkit-margin-end: 5rem;
+            margin-inline-end: 5rem;
+  }
+  .main .contact h3 {
+    font: var(--h3);
+  }
+  .main .contact h5 {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+  .main .formSec {
+    grid-area: formSec;
+    -webkit-margin-before: 10rem;
+            margin-block-start: 10rem;
+  }
+  .main footer {
+    grid-area: footer;
+    -webkit-margin-before: 5rem;
+            margin-block-start: 5rem;
+  }
+  .main footer .footer-redes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main .h3 {
+    font: var(--h1);
+  }
+  .main .cakes-main-title h4 {
+    font: var(--h2);
+    -webkit-margin-before: 10rem;
+            margin-block-start: 10rem;
+  }
+  .main .cake-buscadosTitle h4 {
+    font: var(--h2);
+    -webkit-margin-before: 10rem;
+            margin-block-start: 10rem;
+  }
+  .main .testimoniesTitle h4 {
+    font: var(--h2);
+    -webkit-margin-before: 10rem;
+            margin-block-start: 10rem;
+  }
+}/*# sourceMappingURL=index.css.map */
