@@ -23,13 +23,26 @@
     --button: 900 0.875rem/normal var(--fontFamily); 
     --h4-bold: 700 1.5rem/2rem var(--fontFamily); 
     --h4-light: 300 1.5rem/2rem var(--fontFamily); 
+    --ok: #4acf50;
+    --eror: #f44336;
 }
 
 body{
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    inline-size: .5rem;
+    block-size: .5rem;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+::-webkit-scrollbar-track {
+    background: #ababab;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -130,6 +143,27 @@ textarea {
     resize: none;
 }
 
+.none{
+    display: none;            
+}
+
+.loader{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .main {
     min-block-size: 100vh;
     margin: auto;
@@ -145,6 +179,8 @@ textarea {
     }
 
     .hero {
+
+        background: radial-gradient(50% 50% at 50% 50%, #DFFFF9 0%, rgba(223, 255, 249, 0) 100%);
 
         img{
             margin-block-start: 1rem;
@@ -175,6 +211,12 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+    }
+
+    .cakesBuscados{
+        background: radial-gradient(50% 50% at 50% 50%, #DFFFF9 0%, rgba(223, 255, 249, 0) 100%);
+
     }
 
     .testimonies{
@@ -260,6 +302,33 @@ textarea {
             border-radius: 6px;
             border: none;
         }
+        *::placeholder{
+            color: var(--grey-2);
+        }
+        [required]:valid{
+            border: thin solid var(--ok);
+        }
+
+        [required]:invalid{
+            border: thin solid var(--eror);
+        }
+        &-error{
+            margin-block-start: -1.5rem;
+            font: var(--text);
+            block-size: 2rem;
+            background-color: var(--eror);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            transition: all 800ms ease;
+            &.is-active{
+                display: block;
+                animation: show-message 1s 1 normal 0s ease-out both;
+            }
+        }
+        
+
+
 
         margin-block-end: 6.25rem;
     }
